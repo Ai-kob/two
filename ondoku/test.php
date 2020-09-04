@@ -127,5 +127,4 @@ if (is_readable($filename) === TRUE)  {
                 </ol>
             </div>
         </body>
-    </head>
 </html>
