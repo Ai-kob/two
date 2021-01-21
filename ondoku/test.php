@@ -108,22 +108,22 @@ if (is_readable($filename) === TRUE)  {
                 </div>
             </form>
             <div class ="count">
-                <?php if (count($data) <= 10)  { ?>
+                <?php if (count($data) <= 10): ?>
                     <p><?php print 'たまご！まだまだ頑張れ！' ; ?><br><img src= "tamago.png"></p>
-                <?php } elseif (count($data) <= 15)  { ?>
+                <?php elseif (count($data) <= 15): ?>
                     <P><?php print '赤ちゃん！ファイト～！' ; ?><br><img src="baby.png"></P>
-                <?php } elseif (count($data) <= 25)  { ?>
+                <?php elseif (count($data) <= 25): ?>
                     <p><?php print 'キッズ! 引き続き頑張れ！' ; ?><br><img src= "kids.png"></p>
-                <?php } elseif (count($data) === 50) { ?>
+                <?php elseif (count($data) === 50): ?>
                     <p><?php print '大人になりました！頑張ったね' ; ?><br><img src= "big.png" ></p>
-                <?php } ?>
+                <?php endif ?>
             </div>
             <div class = "kako">
                 <p>以下に<?php print '過去の履歴表示' ; ?></p>
             　　<ol>
-                    <?php foreach ($data as $value) { ?>
+                    <?php foreach ($data as $value): ?>
                     <li><?php print $value ; ?></li>
-                    <?php } ?>
+                    <?php endforeach ?>
                 </ol>
             </div>
         </body>
